@@ -269,12 +269,12 @@ export const projects = [
       },
       {
         name: "Mohamad Noor Fauzi - Frontend Developer",
-        img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-        linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-        github: "https://github.com/upasana0710",
+        img: "https://avatars.githubusercontent.com/u/61603120?v=4",
+        linkedin: "https://www.linkedin.com/in/monfauzi/",
+        github: "https://github.com/monfadev",
       },
       {
-        name: "Mohamad Noor Fauzi - Frontend Developer",
+        name: "Abdul Aziz Rianto - Backend Developer",
         img: "https://avatars.githubusercontent.com/u/100614635?v=4",
         linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
         github: "https://github.com/upasana0710",
