@@ -117,6 +117,7 @@ const Date = styled.div`
     }
 `
 
+// eslint-disable-next-line no-unused-vars
 const Grade = styled.div`
     font-size: 14px;
     font-weight: 500;
@@ -139,7 +140,7 @@ const EducationCard = ({ education }) => {
                     <Date>{education.date}</Date>
                 </Body>
             </Top>
-            <Grade><b>Grade: </b>{education.grade}</Grade>
+            {/* <Grade><b>Grade: </b>{education.grade}</Grade> */}
             <Description>
                 <Span>{education.desc}</Span>
             </Description>

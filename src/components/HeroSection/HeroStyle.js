@@ -1,4 +1,5 @@
 import styled from "styled-components";
+// eslint-disable-next-line no-unused-vars
 import _default from "../../themes/default";
 
 export const HeroContainer = styled.div`
@@ -114,10 +115,10 @@ export const Img = styled.img`
 
 export const Title = styled.div`
   font-weight: 700;
-  font-size: 50px;
+  font-size: 35px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
-  @media (max-width: 960px) {
+  @media (max-width: 980px) {
     text-align: center;
   }
 
@@ -174,7 +175,7 @@ export const ResumeButton = styled.a`
     width: 95%;
     max-width: 300px;
     text-align: center;
-    padding: 16px 0;
+    padding: 16px 10px;
     color:${({ theme }) => theme.white};
     border-radius: 20px;
     cursor: pointer;
