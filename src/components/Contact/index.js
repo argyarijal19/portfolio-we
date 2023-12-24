@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-import { Snackbar } from '@mui/material';
+import Swal from 'sweetalert2';
 
 const Container = styled.div`
 display: flex;
@@ -122,24 +121,73 @@ const ContactButton = styled.input`
 
 
 
+
 const Contact = () => {
 
   //hooks
-  const [open, setOpen] = React.useState(false);
+  const [emailFrom, setEmailFrom] = React.useState("");
+  const [emailSubject, setEmailSubject] = React.useState("");
+  const [emailMessage, setEmailMessage] = React.useState("");
+  const [emailName, setEmailName] = React.useState("");
   const form = useRef();
 
-  const handleSubmit = (e) => {
+  
+  
+  
+  
+  const handleSubmit = async(e) => {
+    
     e.preventDefault();
-    emailjs.sendForm('service_tox7kqs', 'template_nv7k7mj', form.current, 'SybVGsYS52j2TfLbi')
-      .then((result) => {
-        setOpen(true);
-        form.current.reset();
-      }, (error) => {
-        console.log(error.text);
+    const dataSend = {
+      "from": emailFrom,
+      "subject": emailSubject,
+      "message": `Pesan Dari ${emailName} : \n${emailMessage}` 
+    };
+    try {
+      Swal.fire({
+        title: "Sending Email....",
+        html: "<strong>An email will be sent to Argya Rijal Rafi, and will be replied to as soon as possible.</strong>",
+        timerProgressBar:true,
+        didOpen: () => {
+          Swal.showLoading()
+        }
       });
+      const response = await fetch("https://send-email01.fly.dev/send", {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(dataSend)
+      });
+  
+      if (!response.ok) {
+        Swal.close();
+        Swal.fire({
+          title: "Failure !!",
+          text: "Something Went Wrong",
+          icon: "error"
+        })
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+  
+      const responseData = await response.json();
+      console.log(responseData);
+      Swal.close();
+      Swal.fire({
+        title: "Success !!",
+        text: response.message,
+        icon: "success"
+      })
+    } catch (error) {
+      Swal.close();
+      Swal.fire({
+        title: "Failure !!",
+        text: error,
+        icon: "error"
+      })
+      console.error(error);
+    }
   }
-
-
 
   return (
     <Container>
@@ -148,19 +196,12 @@ const Contact = () => {
         <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" rows="4" name="message" />
-          <ContactButton type="submit" value="Send" />
+          <ContactInput onChange={(event) => {setEmailFrom(event.target.value)}} placeholder="Your Email" name="from_email" />
+          <ContactInput onChange={(e) => {setEmailName(e.target.value)}} placeholder="Your Name" name="from_name" />
+          <ContactInput onChange={(e) => {setEmailSubject(e.target.value)}} placeholder="Subject" name="subject" />
+          <ContactInputMessage onChange={(e) => {setEmailMessage(e.target.value)}} placeholder="Message" rows="4" name="message" />
+          <ContactButton onClick={(e) => handleSubmit(e)} type="submit" value="Send" />
         </ContactForm>
-        <Snackbar
-          open={open}
-          autoHideDuration={6000}
-          onClose={()=>setOpen(false)}
-          message="Email sent successfully!"
-          severity="success"
-        />
       </Wrapper>
     </Container>
   )
