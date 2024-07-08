@@ -170,7 +170,7 @@ export const experiences = [
     img: "https://firebasestorage.googleapis.com/v0/b/optical-net-343607.appspot.com/o/png-transparent-telkom-indonesia-logo-telkomsel-mobile-phones-telkom-group-telekom-logo-text-logo-mobile-phones.png?alt=media&token=f449918e-dc62-4587-b138-07b497f663d5",
     role: "Backend Developer",
     company: "PT. Telkom Indonesia",
-    date: "Aug 2023 - December 2023",
+    date: "Aug 2023 - Till Date",
     desc: "As a backend developer at PT Telkom Indonesia, you are responsible for constructing service-backed solutions using the Go programming language for the Antares Smart Poultry IoT application, involving tasks such as designing scalable systems, managing data processing, ensuring communication between frontend and IoT devices, collaborating with cross-functional teams, and optimizing backend performance to advance technology in the IoT domain.",
     skills: [
       "Docker",
