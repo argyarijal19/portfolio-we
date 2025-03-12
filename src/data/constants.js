@@ -49,11 +49,6 @@ export const skills = [
         image:
           "data:image/png;base64,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",
       },
-      // {
-      //   name: "Flutter",
-      //   image:
-      //     "https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png",
-      // },
     ],
   },
   {
@@ -170,7 +165,7 @@ export const experiences = [
     img: "https://firebasestorage.googleapis.com/v0/b/optical-net-343607.appspot.com/o/png-transparent-telkom-indonesia-logo-telkomsel-mobile-phones-telkom-group-telekom-logo-text-logo-mobile-phones.png?alt=media&token=f449918e-dc62-4587-b138-07b497f663d5",
     role: "Backend Developer",
     company: "PT. Telkom Indonesia",
-    date: "Aug 2023 - Till Date",
+    date: "Aug 2023 - Dec 2024",
     desc: "As a backend developer at PT Telkom Indonesia, you are responsible for constructing service-backed solutions using the Go programming language for the Antares Smart Poultry IoT application, involving tasks such as designing scalable systems, managing data processing, ensuring communication between frontend and IoT devices, collaborating with cross-functional teams, and optimizing backend performance to advance technology in the IoT domain.",
     skills: [
       "Docker",
@@ -208,8 +203,8 @@ export const education = [
     id: 0,
     img: "https://firebasestorage.googleapis.com/v0/b/optical-net-343607.appspot.com/o/channels4_profile.jpg?alt=media&token=8827b9a7-3143-47f4-8ea0-ec6204616c0f",
     school: "Universitas Logistik dan Bisnis International, Bandung",
-    date: "Oct 2020 - Present",
-    // grade: "8.71 CGPA",
+    date: "Oct 2020 - Dec 2024",
+    grade: "3.46 CGPA",
     desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Kalinga Institute of Industrial Technology, Bhubaneswar. I have completed 4 semesters and have a CGPA of 8.71. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Student Club (GDSC) at KIIT, where I am learning and working on exciting projects with a team of talented developers.",
     degree: "Diploma of Technology - Diploma IV, Computer Science and Engineering",
   },
@@ -255,7 +250,7 @@ export const projects = [
     description:
       "Creating one of the services for the smart poultry application to enable cage monitoring using IoT devices that can communicate via the HTTP protocol by integrating data using MongoDB and InfluxDB databases, using the Go programming language.",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/optical-net-343607.appspot.com/o/Poultry.png?alt=media&token=5f5a74e6-da91-4b74-9e5a-73a200c920e1",
+      "https://firebasestorage.googleapis.com/v0/b/optical-net-343607.appspot.com/o/Screenshot%202025-03-12%20at%2022.24.46.png?alt=media&token=bcc1c6c2-7ad7-4fc2-b0ba-9f5387dcc6e8",
     tags: ["Golang - Gin Framework", "MongoDb", "InfluxDB", "Postman", "Docker", "Linux", "Virtual Machine"],
     category: "android app",
     github: "",
@@ -278,6 +273,27 @@ export const projects = [
         img: "https://avatars.githubusercontent.com/u/100614635?v=4",
         linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
         github: "https://github.com/upasana0710",
+      },
+    ],
+  },
+  {
+    id: 0,
+    title: "E-Meterai - Microservices Application",
+    date: "Aug 2023 - Dec 2023",
+    description:
+      "Creating one of the services for the smart poultry application to enable cage monitoring using IoT devices that can communicate via the HTTP protocol by integrating data using MongoDB and InfluxDB databases, using the Go programming language.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/optical-net-343607.appspot.com/o/WhatsApp%20Image%202025-03-06%20at%2009.11.56.jpeg?alt=media&token=4f9cf04a-67dc-4655-93f7-24c8a673a886",
+    tags: ["Golang - Fiber Framework", "MongoDb", "PostgreSQl", "Jenkins", "Docker", "Linux", "Virtual Machine"],
+    category: "web app",
+    github: "",
+    webapp: "https://play.google.com/store/apps/details?id=id.telkomiotsmartpoultry.app&pli=1",
+    member: [
+      {
+        name: "Argya Rijal Rafi - Backend Developer",
+        img: "https://avatars.githubusercontent.com/u/73386224?v=4",
+        linkedin: "https://www.linkedin.com/in/argya-rijal-rafi-65b778212/",
+        github: "https://github.com/argyarijal19/",
       },
     ],
   },
