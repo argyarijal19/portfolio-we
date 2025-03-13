@@ -124,12 +124,7 @@ export const skills = [
       {
         name: "Git",
         image:
-          "https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667",
-      },
-      {
-        name: "GitHub",
-        image:
-          "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+          "https://banner2.cleanpng.com/20180425/bxe/ave8vhl4c.webp",
       },
       {
         name: "Docker",
@@ -137,23 +132,12 @@ export const skills = [
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
       },
       {
-        name: "Netlify",
-        image:
-          "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
-      },
-      {
-        name: "VS Code",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
-      },
-      {
-        name: "Postman",
-        image:
-          "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
-      },
-      {
         name: "Linux",
         image: "https://www.vectorlogo.zone/logos/linux/linux-icon.svg",
+      },
+      {
+        name: "Jenkins",
+        image: "https://logowik.com/content/uploads/images/jenkins8460.jpg",
       },
     ],
   },
@@ -162,7 +146,7 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/optical-net-343607.appspot.com/o/png-transparent-telkom-indonesia-logo-telkomsel-mobile-phones-telkom-group-telekom-logo-text-logo-mobile-phones.png?alt=media&token=f449918e-dc62-4587-b138-07b497f663d5",
+    img: "https://www.telkom.co.id/minio/show/data/image_upload/page/1594112895830_compress_PNG%20Icon%20Telkom.png",
     role: "Backend Developer",
     company: "PT. Telkom Indonesia",
     date: "Aug 2023 - Dec 2024",
@@ -180,7 +164,7 @@ export const experiences = [
   },
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/optical-net-343607.appspot.com/o/channels4_profile.jpg?alt=media&token=8827b9a7-3143-47f4-8ea0-ec6204616c0f",
+    img: "https://yt3.googleusercontent.com/879vuOEf5ugiUHeCBEZ2LsQDgKaukUwiubg0oEvagFpRBbAR7kQj3tp_8G5HulSV7mQL4cWFTg=s900-c-k-c0x00ffffff-no-rj",
     role: "Staff IT Intern",
     company: "Universitas Logistik dan Bisnis International",
     date: "June 2022 - March 2023",
@@ -201,7 +185,7 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/optical-net-343607.appspot.com/o/channels4_profile.jpg?alt=media&token=8827b9a7-3143-47f4-8ea0-ec6204616c0f",
+    img: "https://yt3.googleusercontent.com/879vuOEf5ugiUHeCBEZ2LsQDgKaukUwiubg0oEvagFpRBbAR7kQj3tp_8G5HulSV7mQL4cWFTg=s900-c-k-c0x00ffffff-no-rj",
     school: "Universitas Logistik dan Bisnis International, Bandung",
     date: "Oct 2020 - Dec 2024",
     grade: "3.46 CGPA",
@@ -217,7 +201,7 @@ export const projects = [
     date: "Jul 2023 - Aug 2023",
     description: "Rockmaker System Tracker and Selling is a web-based application that serves as a cashier system to record outgoing goods. It allows users to check the status of items, whether they are in the process of being made, undergoing washing, or stored in the warehouse. Users can also view the remaining stock in the warehouse and assess the daily sales cost",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/optical-net-343607.appspot.com/o/Screenshot%202023-12-22%20at%2022.25.04.png?alt=media&token=62273230-8dac-4056-b776-5c545e48a907",
+      "https://firebasestorage.googleapis.com/v0/b/optical-net-343607.appspot.com/o/Screenshot%202025-03-12%20at%2022.24.46.png?alt=media&token=bcc1c6c2-7ad7-4fc2-b0ba-9f5387dcc6e8",
     tags: [
       "Docker",
       "Python - FastAPI",
@@ -250,8 +234,8 @@ export const projects = [
     description:
       "Creating one of the services for the smart poultry application to enable cage monitoring using IoT devices that can communicate via the HTTP protocol by integrating data using MongoDB and InfluxDB databases, using the Go programming language.",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/optical-net-343607.appspot.com/o/Screenshot%202025-03-12%20at%2022.24.46.png?alt=media&token=bcc1c6c2-7ad7-4fc2-b0ba-9f5387dcc6e8",
-    tags: ["Golang - Gin Framework", "MongoDb", "InfluxDB", "Postman", "Docker", "Linux", "Virtual Machine"],
+      "https://firebasestorage.googleapis.com/v0/b/optical-net-343607.appspot.com/o/formImg.png?alt=media&token=425e6047-651b-4426-ba1a-4f02e4d52795",
+    tags: ["Golang - Gin Framework", "MongoDb", "InfluxDB", "Postman", "Docker", "Linux"],
     category: "android app",
     github: "",
     webapp: "https://play.google.com/store/apps/details?id=id.telkomiotsmartpoultry.app&pli=1",
@@ -279,12 +263,12 @@ export const projects = [
   {
     id: 0,
     title: "E-Meterai - Microservices Application",
-    date: "Aug 2023 - Dec 2023",
+    date: "Feb 2025 - Mar 2025",
     description:
       "Creating one of the services for the smart poultry application to enable cage monitoring using IoT devices that can communicate via the HTTP protocol by integrating data using MongoDB and InfluxDB databases, using the Go programming language.",
     image:
       "https://firebasestorage.googleapis.com/v0/b/optical-net-343607.appspot.com/o/WhatsApp%20Image%202025-03-06%20at%2009.11.56.jpeg?alt=media&token=4f9cf04a-67dc-4655-93f7-24c8a673a886",
-    tags: ["Golang - Fiber Framework", "MongoDb", "PostgreSQl", "Jenkins", "Docker", "Linux", "Virtual Machine"],
+    tags: ["Golang - Fiber Framework", "MongoDb", "PostgreSQl", "Jenkins", "Docker", "Linux"],
     category: "web app",
     github: "",
     webapp: "https://play.google.com/store/apps/details?id=id.telkomiotsmartpoultry.app&pli=1",
